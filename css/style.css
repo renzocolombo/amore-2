@@ -1,0 +1,411 @@
+@font-face {
+  font-family: INSANITY;
+  src: url(../tipografias/INSANITY.ttf); }
+
+.fondo {
+  display: grid;
+  grid-template-areas: "logo nav nav nav" "img img img img" "footer footer footer footer";
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 185px 400px 300px; }
+
+header {
+  grid-area: logo; }
+
+section.contenedorProd {
+  grid-area: img;
+  overflow: hidden; }
+
+.form {
+  grid-area: img;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.fondo {
+  background-color: darkkhaki;
+  width: 100%;
+  overflow: hidden; }
+
+.productos {
+  /* grid-area: img; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 350px; }
+
+.ellas {
+  display: flex;
+  justify-content: start;
+  height: 400px; }
+
+.ellos {
+  display: flex;
+  justify-content: end;
+  height: 400px; }
+
+.logo {
+  /* grid-area: logo; */
+  padding: 10px; }
+
+main.nav-nav {
+  grid-area: nav;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end; }
+
+.nav {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  text-align: end; }
+
+li {
+  padding: 0px;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: INSANITY;
+  height: 35px; }
+
+a {
+  font-size: 22px;
+  padding: 10px; }
+
+.imagen-fondo {
+  grid-area: img;
+  width: 100%;
+  overflow: hidden; }
+
+/* poductos ellas */
+.prodellas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 400px;
+  padding: 30px; }
+
+.imgprodellas {
+  padding: 10px; }
+
+.direc {
+  display: flex;
+  color: red;
+  justify-content: center;
+  height: 50px;
+  padding-top: 30px;
+  font-size: 25px;
+  font-family: INSANITY; }
+
+/* ubicacion */
+.logoubi {
+  padding: 30px; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: end; }
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 400px; }
+
+.medioellas {
+  display: flex;
+  justify-content: space-around;
+  height: 600px;
+  width: 600px;
+  align-items: center; }
+
+.mediop {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: black; }
+
+a:hover {
+  font-size: 30px;
+  color: black; }
+
+footer {
+  display: grid;
+  grid-template-areas: "logofoo navfoo contacto rrss" "direccion direccion direccion direccion";
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: auto auto; }
+
+.contacto {
+  padding: 10px;
+  position: relative;
+  bottom: 25px; }
+
+.navellassub {
+  display: flex;
+  justify-content: flex-end; }
+
+.direccion {
+  grid-area: direccion;
+  font-family: INSANITY;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: red;
+  background-color: lightcyan; }
+
+.gradiente {
+  border: solid black 1px;
+  background-image: linear-gradient(blue, red);
+  transform: rotate(15deg); }
+
+.logofo {
+  transform: skew(5deg, 10deg); }
+
+.animate__animated {
+  animation-iteration-count: infinite; }
+
+.ellos {
+  grid-area: img;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px; }
+
+.sub-ellos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  border: solid 1px black;
+  color: black;
+  margin: 100px;
+  font-size: 15px;
+  animation-name: efecto;
+  animation-duration: 50s;
+  animation-delay: 2s; }
+
+/* contacto */
+form {
+  height: 500px; }
+
+@keyframes efecto {
+  0% {
+    color: blue;
+    font-size: 15px;
+    transform: rotate(45deg); }
+  25% {
+    color: cadetblue;
+    font-size: 25px;
+    transform: rotate(25deg); }
+  50% {
+    color: chartreuse;
+    font-size: 15px;
+    transform: rotate(45deg); }
+  75% {
+    color: darksalmon;
+    font-size: 25px;
+    transform: rotate(25deg); }
+  100% {
+    color: darkslategrey;
+    font-size: 15px;
+    transform: rotate(54deg); } }
+
+.sub {
+  width: 100%;
+  border: solid 1px black;
+  background-image: linear-gradient(blue, yellow); }
+
+.navellos:hover {
+  color: chartreuse;
+  font-size: 30px; }
+
+footer {
+  background-image: radial-gradient(violet, black); }
+
+/* .parallax{
+    background-image: url(../imagenes\ modificadas/img-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px; */
+/* aca empieza productos */
+/* productos ellas */
+.conteiner {
+  background-image: radial-gradient(violet, black); }
+
+.nav {
+  display: flex;
+  direction: row;
+  justify-content: flex-end; }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .fondo {
+    display: grid;
+    grid-template-areas: "logo" "nav" "nav2" "img" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 120px auto auto auto; }
+  header {
+    grid-area: logo; }
+  section.contenedorProd {
+    grid-area: img;
+    display: flex;
+    justify-content: space-around;
+    /* width:768px; */ }
+  .logo {
+    /* grid-area: logo; */
+    display: flex;
+    justify-content: center; }
+  main.nav-nav {
+    grid-area: nav;
+    padding: 0px;
+    position: relative;
+    right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  ul li {
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    width: 268px;
+    position: relative; }
+  a {
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    font-size: 12px;
+    width: 50%; }
+  /* contacto */
+  .logocontacto {
+    display: flex;
+    justify-content: center;
+    width: 54%;
+    position: relative;
+    left: 100px; }
+  .logofoocontacto {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    position: relative;
+    left: 60px; }
+  .navcontacto {
+    display: flex;
+    justify-content: flex-end; }
+  .form {
+    display: flex;
+    justify-content: space-around; }
+  ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    position: relative; }
+  h3 {
+    font-size: 25px; }
+  h4 {
+    font-size: 15px; }
+  /* ubicacion */
+  .logoubi {
+    width: 15%; }
+  .productos {
+    position: relative;
+    right: 30px; }
+  .ellas {
+    height: 310px; }
+  .ellos {
+    height: 310px; }
+  img {
+    width: 100%;
+    height: 75%;
+    overflow: hidden; }
+  .imagen-fondo {
+    grid-area: img;
+    width: 100%;
+    height: 180px; }
+  footer {
+    grid-area: footer; }
+  footer {
+    /* display: grid;
+         grid-template-areas: "logofoo navfoo"
+                               "contacto contacto"
+                               "redes redes"
+                                "direccion direccion";
+        grid-template-columns: 25% 75%;
+        grid-template-rows: auto auto auto auto; */
+    display: flex;
+    flex-direction: column; }
+  .logofoo {
+    grid-area: footer;
+    width: 140px;
+    height: 200px; }
+  .nav-footer {
+    grid-area: navfoo;
+    position: relative;
+    right: 10px; }
+  .nav-foo {
+    display: flex;
+    justify-content: center;
+    font-size: 10px; }
+  .columna-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: start; } }
+
+.contacto {
+  grid-area: contacto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+  left: 10px; }
+
+.redes {
+  grid-area: redes;
+  position: relative;
+  right: 3px; }
+
+.direccion {
+  grid-area: direccion; }
+
+p {
+  font-size: 15px;
+  position: relative;
+  left: 30px; }
+
+/* ubicacion */
+.mapa {
+  width: 100%; }
+
+/* subproductos ellas */
+/* .imgprodellas{
+        width: 25%;
+        position: relative;
+        left: 127px;  */
+.direc {
+  position: relative;
+  right: 30px; }
+
+/* .logoproellas{
+         position: relative;
+         left: 150px;
+         width: 200px; */
+/* .navellas{
+    position: relative;
+    right:  30px;
+ }
+  */
