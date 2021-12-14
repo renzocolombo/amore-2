@@ -1,3 +1,7 @@
+.inventado {
+  height: 100px;
+  width: 200px; }
+
 @font-face {
   font-family: INSANITY;
   src: url(../tipografias/INSANITY.ttf); }
@@ -150,7 +154,7 @@ footer {
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: auto auto; }
 
-.contacto {
+.contacto, .redes {
   padding: 10px;
   position: relative;
   bottom: 25px; }
@@ -366,7 +370,7 @@ footer {
     flex-direction: column;
     justify-content: start; } }
 
-.contacto {
+.contacto, .redes {
   grid-area: contacto;
   display: flex;
   flex-direction: column;

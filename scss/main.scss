@@ -2,8 +2,38 @@
 
 // mapa
 
+$nav:(
+    padding:15px,
+    COLOR:BLACK,
+    TEXT-DECORATION:NONE,
+    list-style-type: none,
 
 
+);
+
+h3{
+    color: map-get($nav,color );
+}
+
+// EXTEND
+.contacto{
+
+}
+.redes{
+    @extend .contacto;
+
+}
+// mixin
+ 
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+
+    
+}
+.inventado{
+    @include sizes(200px,100px );
+}
 
 @font-face {
     font-family: INSANITY;
