@@ -179,6 +179,7 @@ a{
     height: 600px;
     width: 600px;
     align-items: center;
+    
 }
 .mediop{
     display: flex;
@@ -441,9 +442,19 @@ justify-content: flex-end;
      
     /* ubicacion */
     .logoubi{
-        width: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
     }
-     
+    .logofooubi{
+        display: flex;
+        justify-content: center;
+    }
+     .mediop{
+         font-size: 15px;
+         position: relative;
+         left: 80px;
+     }
      .productos{
          position: relative;
         right: 30px;
@@ -524,14 +535,21 @@ justify-content: flex-end;
     grid-area: direccion;
 }
 
+
+
 p{
    font-size: 15px;
    position:relative;
    left: 30px;
 }
  /* ubicacion */
+.medioellas{
+    width: 100%;
+    padding: 15px;
+}
  .mapa{
      width: 100%;
+     padding: 15px;
  }
  /* subproductos ellas */
   /* .imgprodellas{
@@ -543,6 +561,8 @@ p{
  .direc{
      position: relative;
      right : 30px;
+     display: flex;
+     align-items: flex-end;
  }
  
  /* .logoproellas{
@@ -556,3 +576,17 @@ p{
  }
   */
 //  productos ellas
+// productos
+.ellos{
+    height: 295px;
+    width: 200px;
+    position: relative;
+    bottom: 7px;
+    right: 12px;
+}
+.ellas{
+    height: 315px;
+    width: 200px;
+    position: relative;
+    left: 25px;
+}
